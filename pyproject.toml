@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "rocketchat_API"
+version = "0.6.10"
+description = "Python API wrapper for Rocket.Chat"
+
+license = "MIT"
+
+authors = [
+    "Jorge Alberto Díaz Orozco <diazorozcoj@gmail.com>"
+]
+
+readme = 'README.md'
+
+repository = "https://github.com/jadolg/rocketchat_API"
+homepage = "https://github.com/jadolg/rocketchat_API"
+
+keywords = ['rocketchat', 'api']
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.2"
+toml = "^0.9"
+requests = { version = "", extras = [ "security" ] }
+
+[tool.poetry.dev-dependencies]
+pylint = "*"
+rope = "*"
+
+[tool.poetry.scripts]
